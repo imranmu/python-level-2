@@ -1,3 +1,4 @@
+import csv
 import requests
 from bs4 import BeautifulSoup
 
@@ -27,7 +28,7 @@ for row in rows:
 
 assert len(countries) > 100
 
-with open('countries.txt', 'w') as file:
+with open('countries.csv', 'w') as file:
     for country in countries:
         file.write(country)
         file.write('\n')

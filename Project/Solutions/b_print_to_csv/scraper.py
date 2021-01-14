@@ -6,8 +6,8 @@ from bs4 import BeautifulSoup
 URL = "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
 
 # Todo: Update with your info
-name = None
-email = None
+name = 'imran'
+email = 'ikbangesh@gmail.com'
 assert name and email
 
 headers = {'User-Agent': f'{name} ({email})'}

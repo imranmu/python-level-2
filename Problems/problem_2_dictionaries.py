@@ -12,3 +12,10 @@ code = {
 message = input("What is your message? ")
 
 # Todo: Translate user input into code of numbers
+coded_message =[]
+for char in message.lower():
+    coded_char=str(code.get(char))
+    #code_char=str(code[char]) # it does not handle characters not present
+    coded_message+=coded_char
+
+print('-'.join(coded_message))
